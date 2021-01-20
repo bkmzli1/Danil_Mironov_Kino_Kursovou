@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>11</java.version>
+        <start-class>ru.kino.demo.DemoApplication</start-class>
     </properties>
 
     <dependencies>
@@ -221,6 +222,17 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.4.2</version>
+                <configuration>
+                    <mainClass>ru.kino.demo.DemoApplication</mainClass>
+                    <layout>ZIP</layout>
+                </configuration>
+            </plugin>
+
+
         </plugins>
     </build>
 
